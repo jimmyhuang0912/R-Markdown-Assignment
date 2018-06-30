@@ -30,9 +30,7 @@ Mean Total Number of Steps Taken per Day
     library("dplyr")
     date <- group_by(data, date)
     data1 <- summarize(date, totalsteps = sum(steps,na.rm=TRUE))
-    hist(data1$totalsteps, 
-         main="Total Number of Steps Taken Each Day", 
-         xlab="Total Steps per Day")
+    hist(data1$totalsteps,main="Total Number of Steps Taken Each Day",xlab="Total Steps per Day")
 
 ![](PA1_template_files/figure-markdown_strict/unnamed-chunk-2-1.png)
 
@@ -150,7 +148,7 @@ Weekday and Weekend
     ## package 'ggplot2' successfully unpacked and MD5 sums checked
     ## 
     ## The downloaded binary packages are in
-    ##  C:\Users\jimmy\AppData\Local\Temp\Rtmp4QHp5U\downloaded_packages
+    ##  C:\Users\jimmy\AppData\Local\Temp\RtmpsJn6bK\downloaded_packages
 
     library("ggplot2")
     ggplot(data = dataB, aes(x = interval, y = steps)) + 
