@@ -2,14 +2,7 @@
 title: "Assignment_Activity"
 author: "jimmyhuang0912"
 date: "June 29, 2018"
-output:
-  html_document: default
-  pdf_document: default
 ---
-```{r setup, include=FALSE, message=FALSE, warning=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Code for reading in the dataset and/or processing the data
 
 1. Load the data
